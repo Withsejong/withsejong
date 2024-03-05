@@ -1,7 +1,7 @@
 package com.withsejong.login
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.withsejong.R
 
 class MainPage : AppCompatActivity() {

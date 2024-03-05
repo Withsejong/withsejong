@@ -6,7 +6,9 @@ plugins {
 android {
     namespace = "com.withsejong"
     compileSdk = 34
-
+    buildFeatures {
+        viewBinding=true
+    }
     defaultConfig {
         applicationId = "com.withsejong"
         minSdk = 24
@@ -28,6 +30,7 @@ android {
                 "proguard-rules.pro"
             )
         }
+
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
