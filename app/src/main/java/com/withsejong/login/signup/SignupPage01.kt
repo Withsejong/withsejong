@@ -1,12 +1,12 @@
-package com.withsejong.login
+package com.withsejong.login.signup
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.withsejong.R
 
-class TmpActivity2 : AppCompatActivity() {
+class SignupPage01 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tmp2)
+        setContentView(R.layout.activity_signup_page01)
     }
 }

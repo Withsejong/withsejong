@@ -1,4 +1,4 @@
-package com.withsejong.start
+package com.withsejong.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -31,7 +31,7 @@ class TmpActivity1 : AppCompatActivity() {
 
         val btnTest = findViewById<Button>(R.id.btn_start)
         btnTest.setOnClickListener {
-            val intent = Intent(this@TmpActivity1,TmpActivity2::class.java)
+            val intent = Intent(this@TmpActivity1, TmpActivity2::class.java)
 
             Log.d(TAG, "버튼 클릭됨")
             startActivity(intent)
