@@ -6,18 +6,20 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import com.withsejong.R
-import com.withsejong.databinding.ActivityTmp1Binding
+import com.withsejong.databinding.ActivityLoginStartPageBinding
+import com.withsejong.login.LoginPage
 
-class TmpActivity1 : AppCompatActivity() {
+class LoginStartPage : AppCompatActivity() {
 
-    val TAG = "TmpActivity1"
+    val TAG = "ActivityLoginChoicePage"
 
-    lateinit var binding:ActivityTmp1Binding
+    lateinit var binding:ActivityLoginStartPageBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tmp1)
-        binding = ActivityTmp1Binding.inflate(layoutInflater)
+        binding = ActivityLoginStartPageBinding.inflate(layoutInflater)
+
+        setContentView(binding.root)
 
         Log.d(TAG,"onCreate함수")
 
@@ -29,9 +31,9 @@ class TmpActivity1 : AppCompatActivity() {
         Log.d(TAG,"onStart함수")
 
 
-        val btnTest = findViewById<Button>(R.id.btn_start)
-        btnTest.setOnClickListener {
-            val intent = Intent(this@TmpActivity1,TmpActivity2::class.java)
+
+        binding.btnStart.setOnClickListener {
+            val intent = Intent(this@LoginStartPage,LoginPage::class.java)
 
             Log.d(TAG, "버튼 클릭됨")
             startActivity(intent)

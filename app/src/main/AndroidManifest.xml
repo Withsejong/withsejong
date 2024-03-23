@@ -13,23 +13,34 @@
         android:theme="@style/Theme.WithSejong"
         tools:targetApi="31">
 
-<!--        Acticity  정의부-->
+<!--        Acticity.login  정의부-->
 
         <activity android:name=".login.MainPage"
             android:exported="false"/>
-        <activity android:name=".start.TmpActivity2"
-            android:exported="false"/>
-        <activity android:name=".MainActivity"
+
+        <activity android:name=".login.AccountPage"
             android:exported="false"/>
 
-        <activity android:name=".login.HomePage"
+        <activity android:name=".login.LoginPage"
+            android:exported="false"/>
+
+        <activity android:name=".login.AccountInPage"
+            android:exported="false"/>
+
+        <activity android:name=".login.LostPasswordPage"
+            android:exported="false"/>
+
+        <!--         다른 Acticity-->
+        <activity android:name=".start.LoginStartPage"
+            android:exported="false"/>
+        <activity android:name=".MainActivity"
             android:exported="false"/>
 
 <!--        첫 화면으로 보여 줄 Acticity-->
 
 
         <activity
-            android:name=".start.TmpActivity1"
+            android:name=".start.LoginChoicePage"
             android:exported="true"
             android:label="@string/app_name"
 

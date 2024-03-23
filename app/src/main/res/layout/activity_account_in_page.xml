@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".start.TmpActivity2">
+    tools:context=".start.LoginChoicePage">
 
     <TextView
         android:id="@+id/tv_title_subname"
@@ -82,7 +82,7 @@
         android:layout_marginBottom="50dp"
         android:background="@drawable/radius_redcolor_line"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="textPassword"
         android:padding="10dp"
         app:layout_constraintBottom_toTopOf="@+id/btn_next"
         app:layout_constraintEnd_toEndOf="parent"
