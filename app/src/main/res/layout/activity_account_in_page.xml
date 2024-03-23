@@ -7,7 +7,7 @@
     tools:context=".start.TmpActivity2">
 
     <TextView
-        android:id="@+id/title_subname_copy1"
+        android:id="@+id/tv_title_subname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -22,7 +22,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/title_name_copy2"
+        android:id="@+id/tv_title_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
@@ -31,8 +31,8 @@
 
         android:textSize="40sp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/title_subname_copy1"
-        app:layout_constraintTop_toBottomOf="@+id/title_subname_copy1" />
+        app:layout_constraintStart_toStartOf="@+id/tv_title_subname"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_subname" />
 
     <Button
         android:id="@+id/btn_next"
@@ -51,7 +51,7 @@
         tools:layout_editor_absoluteX="30dp" />
 
     <ImageView
-        android:id="@+id/sejong_icon_copy2"
+        android:id="@+id/iv_sejong_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -59,7 +59,7 @@
         app:srcCompat="@drawable/sejong_icon" />
 
     <EditText
-        android:id="@+id/student_id_input"
+        android:id="@+id/et_student_id_input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -69,12 +69,12 @@
         android:ems="10"
         android:inputType="number"
         android:padding="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/student_password_input"
+        app:layout_constraintBottom_toTopOf="@+id/et_student_password_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/student_password_input"
+        android:id="@+id/et_student_password_input"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
@@ -87,6 +87,26 @@
         app:layout_constraintBottom_toTopOf="@+id/btn_next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_id_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="학번"
+        app:layout_constraintBottom_toTopOf="@+id/et_student_id_input"
+        app:layout_constraintStart_toStartOf="@+id/et_student_id_input" />
+
+    <TextView
+        android:id="@+id/tv_password_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="비밀번호"
+        app:layout_constraintBottom_toTopOf="@+id/et_student_password_input"
+        app:layout_constraintStart_toStartOf="@+id/et_student_password_input" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
